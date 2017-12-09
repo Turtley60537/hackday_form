@@ -5,27 +5,54 @@
 	<title>Recipient</title>
 </head>
 <body>
-	<form action="/">
-		<select name="audio">
-			<option value="2">text</option>
-			<option value="3">image</option>
-			<option value="4">video</option>
-		</select>
-		<select name="text">
-			<option value="1">audio</option>
-			<option value="3">image</option>
-			<option value="4">video</option>
-		</select>
-		<select name="image">
-			<option value="1">audio</option>
-			<option value="2">text</option>
-			<option value="4">video</option>
-		</select>
-		<select name="video">
-			<option value="1">audio</option>
-			<option value="2">text</option>
-			<option value="3">image</option>
-		</select>
+	<h1>Update Convert Settings</h1>
+	<form action="">
+		<input type="hidden" name="name" value="xxxxxxxxxxxxxxxxxxxxxx">
+		<ul>
+			<li>
+				audio
+				<select id="content_audio">
+					<option value="1">audio</option>
+					<option value="2">text</option>
+					<option value="3">image</option>
+					<option value="4">video</option>
+				</select>
+			</li>
+
+			<li>
+				text
+				<select id="content_text">
+					<option value="1">audio</option>
+					<option value="2">text</option>
+					<option value="3">image</option>
+					<option value="4">video</option>
+				</select>
+			</li>
+
+			<li>
+				image
+				<select id="content_image">
+					<option value="1">audio</option>
+					<option value="2">text</option>
+					<option value="3">image</option>
+					<option value="4">video</option>
+				</select>
+			</li>
+			
+			<li>
+				video
+				<select id="content_video">
+					<option value="1">audio</option>
+					<option value="2">text</option>
+					<option value="3">image</option>
+					<option value="4">video</option>
+				</select>
+			</li>
+		</ul>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+
+		<!-- <input type="submit" name=""> -->
 	</form>
 </body>
 </html>
