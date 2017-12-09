@@ -57,19 +57,23 @@ $_SESSION["name"];
 		</li>
 	</ul>
 
+	<button id="requestupdate">更新</button>
+
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
 	<script type="text/javascript">
-		let param = {
-			name: $_SESSION["name"],
-			content_audio: $("#content_audio").val(),
-			content_text: $("#content_text").val(),
-			content_image: $("#content_image").val(),
-			content_video: $("#content_video").val()
-		}
+		$("#requestupdate").on("click", function(){
+			let param = {
+				name: $_SESSION["name"],
+				content_audio: $("#content_audio").val(),
+				content_text: $("#content_text").val(),
+				content_image: $("#content_image").val(),
+				content_video: $("#content_video").val()
+			}
 
-		$.get("https://mayoneko.xyz/phptest/kernel_update.php", param, function(data){
-			console.log(data);
+			$.get("https://mayoneko.xyz/phptest/kernel_update.php", param, function(data){
+				console.log(data);
+			});
 		});
 	</script>
 </body>
